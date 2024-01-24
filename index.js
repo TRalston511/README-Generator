@@ -37,3 +37,18 @@ const questions = [
         message: "Share your link to your github"
     },
 ]
+
+// Initializing Application 
+
+function init() {
+    inquirer.prompt(questions).then(responses) => {
+        console.log("Creating README.md file");
+        writeToFile('./README.md');
+    }
+}
+
+// Writing README file 
+
+function writeToFile(fileName, data){
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
