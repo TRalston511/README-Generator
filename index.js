@@ -2,6 +2,8 @@
 
 const fs = required("fs");
 const inquirer = required("inquirer");
+const path = require("path");
+const generateMarkdown = require("./generateMarkdown");
 
 // Array of Questions to Utilize Input and Generate README 
 
@@ -41,10 +43,10 @@ const questions = [
 // Initializing Application 
 
 function init() {
-    inquirer.prompt(questions).then(responses) => {
+    inquirer.prompt(questions).then((responses) => {
         console.log("Creating README.md file");
-        writeToFile('./README.md');
-    }
+        writeToFile('./README.md', generateMarkdown({...responses}));
+    });
 }
 
 // Writing README file 
@@ -52,3 +54,4 @@ function init() {
 function writeToFile(fileName, data){
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
+init();
