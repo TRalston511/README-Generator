@@ -1,7 +1,7 @@
 // Packages needed for the application
 
-const fs = required("fs");
-const inquirer = required("inquirer");
+const fs = require("fs");
+const inquirer = require("inquirer");
 const path = require("path");
 const generateMarkdown = require("./generateMarkdown");
 
@@ -15,7 +15,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "user story",
+        name: "user-story",
         message: "Describe the User Story for this Project"
     },
     {
@@ -25,18 +25,23 @@ const questions = [
     },
     {
         type: "input",
-        name: "repo link",
+        name: "repo-link",
         message: "Share your link to repository"
     },
     {
         type: "input",
-        name: "app link",
+        name: "app-link",
         message: "Share your link to application"
     },
     {
         type: "input",
-        name: "github link",
+        name: "github-link",
         message: "Share your link to your github"
+    },
+    {
+        type: "input",
+        name: "contributors",
+        message: "Name/List Contributors to the project"
     },
 ]
 
