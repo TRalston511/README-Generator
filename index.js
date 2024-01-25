@@ -15,7 +15,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "user-story",
+        name: "user",
         message: "Describe the User Story for this Project"
     },
     {
@@ -25,17 +25,17 @@ const questions = [
     },
     {
         type: "input",
-        name: "repo-link",
+        name: "repo",
         message: "Share your link to repository"
     },
     {
         type: "input",
-        name: "app-link",
+        name: "app",
         message: "Share your link to application"
     },
     {
         type: "input",
-        name: "github-link",
+        name: "github",
         message: "Share your link to your github"
     },
     {

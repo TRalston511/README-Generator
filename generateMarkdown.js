@@ -3,16 +3,18 @@
 function generateMarkdown(data) {
     return `# ${data.title}
     ## User Story
-    ${data.user-story}
+    ${data.user}
     ## Resources 
     ${data.resources}
     ## Repository Link
-    ${data.repo-link}
+    ${data.repo}
     ## Application Link 
-    ${data.app-link}
+    ${data.app}
     ## Github Link
-    ${data.github-link}
+    ${data.github}
     ## Contributors
     ${data.contributors}
     `;
 }
+
+module.exports = generateMarkdown;
