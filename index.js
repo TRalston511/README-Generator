@@ -15,13 +15,28 @@ const questions = [
     },
     {
         type: "input",
-        name: "user",
+        name: "description",
         message: "Describe the User Story for this Project"
     },
     {
         type: "input",
-        name: "resources",
-        message: "List any Languages and Technologies used"
+        name: "installation",
+        message: "Describe installation requirements"
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "Describe usage of the application"
+    },
+    {
+        type: "input",
+        name: "license",
+        message: "Identify your project license"
+    },
+    {
+        type: "input",
+        name: "contributing",
+        message: "Name any contributors to your project"
     },
     {
         type: "input",
@@ -37,11 +52,6 @@ const questions = [
         type: "input",
         name: "github",
         message: "Share your link to your github"
-    },
-    {
-        type: "input",
-        name: "contributors",
-        message: "Name/List Contributors to the project"
     },
 ]
 

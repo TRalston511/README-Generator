@@ -2,18 +2,30 @@
 
 function generateMarkdown(data) {
     return `# ${data.title}
-    ## User Story
-    ${data.user}
-    ## Resources 
-    ${data.resources}
-    ## Repository Link
+    ## Description
+    ${data.description}
+    ## Table of Contents
+    - Installation
+    - Usage
+    - License
+    - Contributing
+    - Tests
+    - Links
+    ## Installation
+    ${data.installation}
+    ## Usage
+    ${data.usage}
+    ## License
+    ${data.license}
+    ## Contributing
+    ${data.contributing}
+    ## Links
+    - Repository Link
     ${data.repo}
-    ## Application Link 
+    - Application Link 
     ${data.app}
-    ## Github Link
+    - Github Link
     ${data.github}
-    ## Contributors
-    ${data.contributors}
     `;
 }
 
